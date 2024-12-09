@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url('ocean.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero * {
+  font-family: 'League Spartan', sans-serif;
+  color: #fff;
+  text-align: center; /* added this line to center the text */
+}
+
+#title {
+  font-size: 8vw; /* reduced the font size to 8vw */
+  text-transform: uppercase;
+  padding-top: 4vw;
+  margin-bottom: 10vw;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#subtitle {
+  font-size: 4vw;
+  margin-bottom: 4vw;
+}
+
+#button {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2vw; /* slightly smaller than the subtitle */
+  font-weight: bold;
+  color: #fff; /* default text color */
+  background-color: transparent;
+  border: 0.25vw solid #fff;
+  border-radius: 5000px; /* fully rounded on the two sides */
+  padding: 10px 20px;
+  padding: 10px 30px; /* increased left/right padding to 30px */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#button:hover {
+  transform: scale(1.1); /* slightly enlarge on hover */
+}
+
+#button:active {
+  background-color: rgba(255, 255, 255, 0.4); /* slightly opaque white on click */
+  backdrop-filter: blur(5px); /* blur the background on click */
+}
+
+#gallery {
+  margin: 0px 0px 0px 0px;
+  background-color: #1d1d1f;
+  padding: 0px;
+}
+
+.small-titles {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 5vw;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 6vw;
+  padding-left: 5vw;
+  padding-bottom: 6vw;
+}
+
+#image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3vw;
+  grid-row-gap: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding-bottom: 6vw;
+}
+
+#image-grid img {
+  width: 45vw;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+#zoom-out {
+  margin: 0px 0px 0px 0px;
+  background-color: #000; /* black background color */
+  padding: 0px;
+}
+
+#zoom-out p {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%; /* adjust the width to your liking */
+  text-align: left;
+  color: #fff;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2.5vw;
+  padding-bottom: 6vw;
+}
+
+#zoom-out .full-width-image {
+  width: 100%; /* set the image width to 100% */
+  height: auto; /* set the image height to auto to maintain aspect ratio */
+  margin: 0; /* remove any margins */
+  padding: 0; /* remove any padding */
+}
+
+#zoom-out h3 {
+  font-family: 'League Spartan', sans-serif;
+  display: block;
+  margin: 0 auto;
+  max-width: 80%; /* adjust the width to your liking */
+  text-align: center; /* center the text */
+  font-weight: bold; /* bold font */
+  font-size: 4vw; /* larger font size */
+  color: #fff; /* white text color */
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+}
+
+.slogan {
+  margin: 0px 0px 0px 0px;
+  background-color: #1d1d1f; /* black background color */
+  padding: 0px;
+  text-align: center;
+}
+
+.slogan h4 {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  font-family: 'League Spartan', sans-serif; /* League Spartan font */
+  font-weight: bold; /* bold font */
+  font-size: 5vw; /* 5vw font size */
+  color: #5198cb; 
+}
+
+.slogan #first {
+  padding-bottom: 0;
+}
+
+.slogan #last {
+  padding-top: 0;
+  color: #ddf1ff;
+  text-shadow: 
+    0 0 20px #cdeaff, 
+    0 0 30px #cdeaff; 
+}
