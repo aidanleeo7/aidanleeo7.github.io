@@ -15,7 +15,9 @@
     <div id="hero">
       <h1 id="title">Don't take clean waters for granted.</h1>
       <h2 id="subtitle">Ocean resources are dwindling.</h2>
-      <button id="button">It's time to take action.</button>
+      <button class="button" onclick="document.getElementById('slogan').scrollIntoView();">
+          It's time to take action.
+      </button>
     </div>
     <div id="gallery">
       <h2 class="small-titles">Take a look.</h2>
@@ -42,11 +44,43 @@
         <img src="zoom-04.png" alt="ESB" class="full-width-image">
         <h3>25,000 Empire State Buildings.</h3>
     </div>
-    <div class="slogan">
+    <div class="slogan" id="slogan">
       <h4 id="first">You can make a</h4>
       <h4 id="last">difference.</h4>
     </div>
     <div class="slogan" id="citizen">
-      <h2 class="small-titles">Coral Watch</h2>
+      <h2 class="small-titles">CoralWatch</h2>
+      <div class="leftalign" style="display: flex; justify-content: space-between;">
+        <img src="https://coralwatch.org/wp-content/uploads/2023/11/cropped-front-Coral-Health-Chart_ALA-and-Biocollect.png" alt="Your Image">
+        <div>
+          <p>CoralWatch, based at The University of Queensland, Australia, is a well-established citizen science program founded in 2002. Through the use of a color sheet, citizens can identify coral bleaching and provide data to scientists. To join the program, all you have to do is to download a "DIY" kit available on the Coral Watch website, and request for a free Coral Health Chart. It's that easy.</p>
+        </div>
+      </div>
+      <button class="button" id="learn-more-btn" onclick="window.open('https://coralwatch.org/')">
+        Learn More
+      </button>
+      <button class="button" id="download-btn" onclick="window.open('https://coralwatch.org/monitoring/monitoring-materials/')">
+        Download DIY kit
+      </button><h2 class="small-titles">Microplastics Survey</h2>
+      <div class="rightalign" style="display: flex; justify-content: space-between;">
+        <div>
+          <p>There exist many global citizen science projects that gather data and information about the microplastics problem from around the world. The data collected will be used for researchers and scientists to better know where and how microplastics end up in the ocean, and come up with better solutions to the problem.</p>
+        </div>
+        <img src="https://corp.pirika.org/service/albatross/images/micro_plastic_img.jpg" alt="Your Image">
+      </div>
+      <button class="button" id="learn-more-btn" onclick="window.open('https://www.google.com/search?query=microplastics%20survey%20near%20me')">
+        Learn More
+      </button>
+      <h2 class="small-titles">Beach Cleanup</h2>
+      <div class="leftalign" style="display: flex; justify-content: space-between;">
+        <img src="https://media.istockphoto.com/id/1435005446/photo/recyclers-cleaning-the-beach.jpg?s=612x612&w=0&k=20&c=92lBY2A3i0c32_1wd_tTulVcaW0crv8jItFucmS75qo=" alt="Your Image">
+        <div>
+          <p>It's not hard to plan a beach clean-up. Go to a local beach with large rubbish bags and gloves, and pick up whatever garbage you see along the beach while taknig a peaceful stroll and enjoying the magnificent view of the ocean. Contact your local government department for more details.</p>
+        </div>
+      </div>
+      <button class="button" id="calendar-btn" onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text=Beach+Cleanup&details=Find+your+friends+and+family+to+join+you+in+your+efforts!&dates=20201231T160000/20201231T170000&recur=RRULE:FREQ%3DWEEKLY;UNTIL%3D20210603&ctz=America/Toronto')">
+        Schedule a cleanup
+      </button>
     </div>
+    
 </body>

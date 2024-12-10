@@ -40,7 +40,7 @@ body {
   margin-bottom: 4vw;
 }
 
-#button {
+.button {
   font-family: 'League Spartan', sans-serif;
   font-size: 2vw; /* slightly smaller than the subtitle */
   font-weight: bold;
@@ -54,11 +54,11 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-#button:hover {
+.button:hover {
   transform: scale(1.1); /* slightly enlarge on hover */
 }
 
-#button:active {
+.button:active {
   background-color: rgba(255, 255, 255, 0.4); /* slightly opaque white on click */
   backdrop-filter: blur(5px); /* blur the background on click */
 }
@@ -143,11 +143,11 @@ body {
 }
 
 .slogan h4 {
-  padding-top: 3vw;
-  padding-bottom: 3vw;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
   font-family: 'League Spartan', sans-serif; /* League Spartan font */
   font-weight: bold; /* bold font */
-  font-size: 5vw; /* 5vw font size */
+  font-size: 8vw; /* 5vw font size */
   color: #5198cb; 
 }
 
@@ -161,4 +161,79 @@ body {
   text-shadow: 
     0 0 20px #cdeaff, 
     0 0 30px #cdeaff; 
+}
+
+#citizen {
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  text-align: left;
+  padding-bottom: 6vw;
+}
+
+.leftalign {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  max-width: 100%;
+}
+
+.rightalign {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  max-width: 100%;
+}
+
+.leftalign img {
+  max-width: 45vw;
+  object-fit: cover;
+}
+
+.leftalign p {
+  font-family: 'League Spartan', sans-serif;
+  display: block;
+  margin: 0 auto;
+  padding-left: 6vw;
+  font-size: 2.5vw; /* larger font size */
+  color: #fff; /* white text color */
+}
+
+.rightalign p {
+  font-family: 'League Spartan', sans-serif;
+  display: block;
+  margin: 0 auto;
+  padding-right: 6vw;
+  font-size: 2.5vw; /* larger font size */
+  color: #fff; /* white text color */
+}
+
+.rightalign img {
+  max-width: 45vw;
+  object-fit: cover;
+}
+
+#learn-more-btn {
+  font-size: 2.5vw;
+  margin-top: 6vw;
+  margin-left: 5vw;
+  margin-bottom: 6vw;
+
+}
+
+#download-btn {
+  font-size: 2.5vw;
+  margin-top: 6vw;
+  margin-left: 5vw;
+  margin-bottom: 6vw;
+
+}
+
+#calendar-btn {
+  font-size: 2.5vw;
+  margin-top: 6vw;
+  margin-left: 5vw;
+  margin-bottom: 6vw;
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
